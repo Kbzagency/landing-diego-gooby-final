@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #080808;
+  --color-dark: #0D0D0D;
+  --color-surface: #141414;
+
+  --color-gold: #D4AF37;
+  --color-gold-bright: #F0C040;
+  --color-gold-dim: #8B7322;
+  --color-champagne: #F7E7CE;
+
+  --color-celeste: #75AADB;
+  --color-argentina: #072E51;
+  --color-sol: #FCBF49;
+
+  --color-napoli-blue: #12A0D7;
+  --color-napoli-dark: #003C82;
+
+  --color-text-primary: #F7E7CE;
+  --color-text-secondary: #9A8878;
+  --color-text-muted: #3A3028;
+
+  --font-bebas: var(--font-bebas-var), "Bebas Neue", sans-serif;
+  --font-playfair: var(--font-playfair-var), "Playfair Display", serif;
+  --font-barlow: var(--font-barlow-var), "Barlow Condensed", sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  background-color: var(--color-void);
+  color: var(--color-text-primary);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html::-webkit-scrollbar { display: none; }
+
+body {
+  background-color: var(--color-void);
+  overflow-x: hidden;
+  font-family: var(--font-barlow);
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-void);
+}
+
+/* Cursor hidden only on desktop with hover */
+@media (hover: hover) {
+  * { cursor: none !important; }
+}
+
+/* GRAIN — COMPLETELY STATIC, NO ANIMATION, NO TRANSFORM */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  background-repeat: repeat;
+}
