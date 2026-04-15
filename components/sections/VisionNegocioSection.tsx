@@ -74,7 +74,7 @@ export default function VisionNegocioSection() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6">
-        <div className="vision-header text-center mb-64">
+        <div className="vision-header text-center" style={{ marginBottom: "16rem" }}>
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-4">
             Visión
           </p>
