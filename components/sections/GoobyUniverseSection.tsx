@@ -154,7 +154,7 @@ export default function GoobyUniverseSection() {
 
         {/* Parte inferior: texto + pasos sobre fondo limpio */}
         <div className="max-w-2xl mx-auto px-6 text-center py-20 md:py-32">
-          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg italic leading-loose" style={{ marginTop: "12rem", marginBottom: "20rem" }}>
+          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg italic leading-loose" style={{ marginTop: "100px", marginBottom: "100px" }}>
             Productos físicos oficiales como pulseras o camisetas de edición
             limitada. Al acercar el celular, el fan accede automáticamente al
             universo Maradona con un{" "}
@@ -188,7 +188,7 @@ export default function GoobyUniverseSection() {
       </div>
 
       {/* 5D — El Sentimiento No Terminó */}
-      <section className="w-full py-32 md:py-48 px-6">
+      <section className="w-full py-32 md:py-48 px-6" style={{ paddingTop: "100px" }}>
         <div className="max-w-2xl mx-auto text-center">
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-14">
             El Sentimiento No Terminó
@@ -201,7 +201,7 @@ export default function GoobyUniverseSection() {
           </p>
 
           {/* Three big words */}
-          <div className="sentimiento-words space-y-6" style={{ marginBottom: "16rem" }}>
+          <div className="sentimiento-words space-y-6" style={{ marginBottom: "100px" }}>
             {[
               { text: "La magia.", color: "#D4AF37" },
               { text: "La conexión.", color: "#75AADB" },

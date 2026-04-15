@@ -60,6 +60,7 @@ export default function VisionNegocioSection() {
       id="legado"
       ref={container}
       className="relative w-full py-24 md:py-32 overflow-hidden"
+      style={{ paddingTop: "100px" }}
     >
       <div className="absolute inset-0">
         <Image
@@ -74,7 +75,7 @@ export default function VisionNegocioSection() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6">
-        <div className="vision-header text-center" style={{ marginBottom: "16rem" }}>
+        <div className="vision-header text-center" style={{ marginBottom: "100px" }}>
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-4">
             Visión
           </p>
