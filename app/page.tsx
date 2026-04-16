@@ -36,7 +36,6 @@ export default function Page() {
         <VisionNegocioSection />
         <SectionDivider />
         <SliderSection />
-        <SectionDivider />
         <CTASection />
       </main>
     </>
