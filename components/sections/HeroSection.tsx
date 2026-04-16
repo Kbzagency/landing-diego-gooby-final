@@ -46,10 +46,11 @@ export default function HeroSection() {
         }, "-=0.3");
 
         // Quote subtitle
-        tl.from(".hero-subtitle", {
-          opacity: 0,
-          y: 20,
+        tl.to(".hero-subtitle", {
+          opacity: 1,
+          y: 0,
           duration: 0.8,
+          stagger: 0.2,
         }, "-=0.3");
       });
     },
