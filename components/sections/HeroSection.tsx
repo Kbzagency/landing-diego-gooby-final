@@ -77,8 +77,8 @@ export default function HeroSection() {
       </div>
 
       {/* Top subtitle - typewriter */}
-      <p className="hero-top-subtitle absolute top-24 left-1/2 -translate-x-1/2 z-10 font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.35em] text-sm md:text-lg uppercase text-center whitespace-nowrap overflow-hidden border-r-2 border-[var(--color-gold)] w-0">
-        El Ecosistema Digital Oficial de
+      <p className="hero-top-subtitle absolute top-24 left-1/2 -translate-x-1/2 z-10 font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.25em] text-xs md:text-base uppercase text-center whitespace-nowrap overflow-hidden border-r-2 border-[var(--color-gold)] w-0">
+        Gracias por dejarnos construir tu ecosistema digital oficial
       </p>
 
       {/* Content */}
