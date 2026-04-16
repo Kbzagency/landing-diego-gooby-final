@@ -110,6 +110,14 @@ export default function HeroSection() {
         >
           D10S
         </h1>
+        <p
+          className="hero-subtitle font-[family-name:var(--font-bebas)] text-white text-[clamp(2rem,8vw,5rem)] mt-4 tracking-[0.1em] max-w-lg opacity-0 uppercase"
+          style={{
+            textShadow: "0 0 60px rgba(212,175,55,0.2), 0 4px 20px rgba(0,0,0,0.7)",
+          }}
+        >
+          Por ser argentino
+        </p>
         <p className="hero-subtitle font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-xl md:text-2xl mt-6 tracking-[0.15em] max-w-lg opacity-0">
           EL LEGADO DE DIEGO, AHORA SE VIVE EN CADA FAN
         </p>
