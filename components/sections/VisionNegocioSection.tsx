@@ -21,6 +21,11 @@ const PILARES = [
     desc: "Monetización respetuosa. Ediciones limitadas. Valor sostenido en el tiempo.",
     icon: "♾️",
   },
+  {
+    titulo: "Seguridad",
+    desc: "Cada producto tiene un código único que aporta trazabilidad y experiencia. El estándar de autenticación más alto del mercado.",
+    icon: "🔐",
+  },
 ];
 
 export default function VisionNegocioSection() {
@@ -84,7 +89,7 @@ export default function VisionNegocioSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{ marginBottom: "80px" }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" style={{ marginBottom: "80px" }}>
           {PILARES.map((pilar, i) => (
             <div
               key={i}
