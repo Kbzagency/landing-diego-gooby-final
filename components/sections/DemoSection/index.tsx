@@ -109,7 +109,7 @@ export default function DemoSection() {
           <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] text-white leading-none">
             PROBALO VOS MISMO
           </h2>
-          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-text-secondary)] text-sm mt-3 max-w-xs mx-auto">
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-text-secondary)] text-sm max-w-xs mx-auto" style={{ marginTop: "40px" }}>
             Arrastrá la pulsera hacia un celular
           </p>
         </div>
