@@ -249,7 +249,7 @@ export default function DemoSection() {
         </div>
 
         {/* Buttons */}
-        <div className="flex justify-center gap-4 px-4">
+        <div className="flex justify-center gap-4 px-4 mt-12">
           <button
             onClick={() => activateMode("maradona")}
             className="font-[family-name:var(--font-barlow)] text-xs tracking-widest uppercase px-5 py-3 border border-[var(--color-gold)]/40 text-[var(--color-gold)] rounded-full hover:border-[var(--color-gold)] transition-colors"
