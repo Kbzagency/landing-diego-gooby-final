@@ -97,7 +97,7 @@ export default function CTASection() {
         className="font-[family-name:var(--font-bebas)] text-white tracking-[0.3em] uppercase mt-10"
         style={{
           fontSize: "clamp(3rem, 12vw, 8rem)",
-          opacity: 0.15,
+          opacity: 0.6,
         }}
       >
         FOREVER
