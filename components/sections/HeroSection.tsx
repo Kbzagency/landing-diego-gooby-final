@@ -14,6 +14,14 @@ export default function HeroSection() {
       gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
         const tl = gsap.timeline();
 
+        // GRACIAS text fade in
+        tl.to(".hero-gracias", {
+          opacity: 0.9,
+          duration: 1.5,
+          ease: "power2.out",
+          delay: 0.1,
+        });
+
         // Fade in top subtitle
         tl.to(".hero-top-subtitle", {
           opacity: 1,
@@ -66,6 +74,20 @@ export default function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/20 to-black/95" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/30" />
+      </div>
+
+      {/* GRACIAS between Diego's hands */}
+      <div
+        className="hero-gracias absolute left-1/2 -translate-x-1/2 z-[5] font-[family-name:var(--font-bebas)] text-white uppercase text-center select-none pointer-events-none opacity-0"
+        style={{
+          top: "22%",
+          fontSize: "clamp(4rem, 18vw, 14rem)",
+          letterSpacing: "0.05em",
+          textShadow: "0 0 80px rgba(212,175,55,0.3), 0 0 40px rgba(0,0,0,0.6)",
+          mixBlendMode: "screen",
+        }}
+      >
+        GRACIAS
       </div>
 
       {/* Top subtitle */}
