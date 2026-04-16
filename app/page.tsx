@@ -4,6 +4,7 @@ import DesafioSection from "@/components/sections/DesafioSection";
 import GoobyUniverseSection from "@/components/sections/GoobyUniverseSection";
 import DemoSection from "@/components/sections/DemoSection";
 import VisionNegocioSection from "@/components/sections/VisionNegocioSection";
+import SliderSection from "@/components/sections/SliderSection";
 import CTASection from "@/components/sections/CTASection";
 import Navbar from "@/components/ui/Navbar";
 import CustomCursor from "@/components/ui/CustomCursor";
@@ -33,6 +34,8 @@ export default function Page() {
         <DemoSection />
         <SectionDivider />
         <VisionNegocioSection />
+        <SectionDivider />
+        <SliderSection />
         <SectionDivider />
         <CTASection />
       </main>
