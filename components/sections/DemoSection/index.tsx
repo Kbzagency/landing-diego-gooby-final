@@ -89,6 +89,16 @@ export default function DemoSection() {
 
   return (
     <section id="experiencia" className="w-full relative overflow-hidden">
+      {/* Title above photo */}
+      <div className="text-center pt-20 pb-10 px-4">
+        <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-3">
+          Una Experiencia
+        </p>
+        <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] text-white leading-none">
+          PROBALO VOS MISMO
+        </h2>
+      </div>
+
       {/* Intro visual */}
       <div className="relative w-full h-[45vw] max-h-64 overflow-hidden">
         <Image
@@ -103,13 +113,7 @@ export default function DemoSection() {
 
       <div className="py-20 md:py-28">
         <div className="text-center mb-12 px-4">
-          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-3">
-            Una Experiencia
-          </p>
-          <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] text-white leading-none">
-            PROBALO VOS MISMO
-          </h2>
-          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-text-secondary)] text-sm max-w-xs mx-auto" style={{ marginTop: "40px" }}>
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-text-secondary)] text-sm max-w-xs mx-auto" style={{ marginTop: "0px" }}>
             Arrastrá la pulsera hacia un celular
           </p>
         </div>
