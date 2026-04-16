@@ -70,7 +70,7 @@ export default function CTASection() {
           <br />
           CONECTADAS CON DIEGO A LA VEZ?
         </h2>
-        <p className="cta-body font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg md:text-xl italic leading-relaxed mb-14 max-w-xl mx-auto">
+        <p className="cta-body font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg md:text-xl italic leading-relaxed max-w-xl mx-auto" style={{ marginBottom: "80px" }}>
           Lo que falta es construir el lugar donde esa eternidad cobre vida de
           forma correcta. Y ese lugar... lo podemos construir juntos.
         </p>
