@@ -78,13 +78,13 @@ export default function HeroSection() {
 
       {/* GRACIAS between Diego's hands */}
       <div
-        className="hero-gracias absolute left-1/2 -translate-x-1/2 z-[5] font-[family-name:var(--font-bebas)] text-white uppercase text-center select-none pointer-events-none opacity-0"
+        className="hero-gracias absolute left-1/2 -translate-x-1/2 z-[5] font-[family-name:var(--font-bebas)] uppercase text-center select-none pointer-events-none opacity-0"
         style={{
           top: "22%",
           fontSize: "clamp(4rem, 18vw, 14rem)",
           letterSpacing: "0.05em",
-          textShadow: "0 0 80px rgba(212,175,55,0.3), 0 0 40px rgba(0,0,0,0.6)",
-          mixBlendMode: "screen",
+          color: "rgba(0,0,0,0.85)",
+          textShadow: "none",
         }}
       >
         GRACIAS
