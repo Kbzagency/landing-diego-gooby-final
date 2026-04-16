@@ -14,22 +14,14 @@ export default function HeroSection() {
       gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
         const tl = gsap.timeline();
 
-        // Typewriter effect for top subtitle
-        const subtitleEl = document.querySelector(".hero-top-subtitle") as HTMLElement;
-        if (subtitleEl) {
-          const textWidth = subtitleEl.scrollWidth;
-          tl.to(subtitleEl, {
-            width: textWidth + 2,
-            duration: 1.8,
-            ease: "steps(30)",
-            delay: 0.2,
-          });
-          tl.to(subtitleEl, {
-            borderColor: "transparent",
-            duration: 0.1,
-            delay: 0.3,
-          });
-        }
+        // Fade in top subtitle
+        tl.to(".hero-top-subtitle", {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          delay: 0.3,
+        });
 
         // D10S title entrance
         const split = SplitText.create(".hero-title", {
@@ -76,10 +68,14 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/30" />
       </div>
 
-      {/* Top subtitle - typewriter */}
-      <p className="hero-top-subtitle absolute top-24 left-1/2 -translate-x-1/2 z-10 font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.25em] text-xs md:text-base uppercase text-center whitespace-nowrap overflow-hidden border-r-2 border-[var(--color-gold)] w-0">
-        Gracias por dejarnos construir tu ecosistema digital oficial
-      </p>
+      {/* Top subtitle */}
+      <div className="hero-top-subtitle absolute top-20 left-1/2 -translate-x-1/2 z-10 font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.25em] text-xs md:text-base uppercase text-center leading-relaxed opacity-0">
+        Gracias por dejarnos
+        <br />
+        construir tu ecosistema
+        <br />
+        digital oficial
+      </div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
