@@ -143,9 +143,6 @@ export default function DemoSection() {
               </div>
               <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-6 h-1 rounded-full bg-black/80 z-10" />
             </div>
-            <p className="font-[family-name:var(--font-barlow)] text-[10px] tracking-[0.3em] uppercase text-[var(--color-gold)]">
-              Modo Maradoniano
-            </p>
           </div>
 
           {/* CENTER — Draggable Bracelet */}
@@ -248,9 +245,6 @@ export default function DemoSection() {
               </div>
               <div className="absolute top-2.5 left-1/2 -translate-x-1/2 w-6 h-1 rounded-full bg-black/80 z-10" />
             </div>
-            <p className="font-[family-name:var(--font-barlow)] text-[10px] tracking-[0.3em] uppercase text-[var(--color-celeste)]">
-              Modo Hincha
-            </p>
           </div>
         </div>
 
