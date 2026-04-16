@@ -92,6 +92,16 @@ export default function CTASection() {
       </div>
 
       <div className="w-px h-16 bg-gradient-to-b from-[var(--color-gold-dim)] to-transparent mt-12" />
+
+      <p
+        className="font-[family-name:var(--font-bebas)] text-white tracking-[0.3em] uppercase mt-10"
+        style={{
+          fontSize: "clamp(3rem, 12vw, 8rem)",
+          opacity: 0.15,
+        }}
+      >
+        FOREVER
+      </p>
     </section>
   );
 }
