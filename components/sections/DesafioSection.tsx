@@ -39,6 +39,14 @@ export default function DesafioSection() {
             </span>
             ?&rdquo;
           </h2>
+
+          <div className="w-px h-16 bg-gradient-to-b from-transparent via-[var(--color-gold-dim)]/30 to-transparent mx-auto mt-16 mb-10" />
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-4">
+            El Camino
+          </p>
+          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg md:text-xl italic leading-relaxed">
+            Hasta hoy, el legado se recuerda. Ahora puede vivirse.
+          </p>
         </div>
       </div>
     </section>

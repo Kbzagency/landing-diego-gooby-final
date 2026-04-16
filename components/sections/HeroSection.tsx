@@ -92,8 +92,11 @@ export default function HeroSection() {
         >
           D10S
         </h1>
-        <p className="hero-subtitle font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg md:text-xl mt-6 italic max-w-sm opacity-0">
-          &ldquo;El legado de Diego, ahora se vive en cada fan.&rdquo;
+        <p className="hero-subtitle font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-xl md:text-2xl mt-6 tracking-[0.15em] max-w-lg opacity-0">
+          EL LEGADO DE DIEGO, AHORA SE VIVE EN CADA FAN
+        </p>
+        <p className="hero-subtitle font-[family-name:var(--font-barlow)] text-[var(--color-champagne)] text-sm md:text-base mt-3 tracking-wider max-w-sm opacity-0">
+          Una nueva forma de conectar con Diego Maradona
         </p>
       </div>
 

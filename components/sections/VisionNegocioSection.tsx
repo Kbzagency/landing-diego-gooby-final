@@ -84,7 +84,7 @@ export default function VisionNegocioSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6" style={{ marginBottom: "80px" }}>
           {PILARES.map((pilar, i) => (
             <div
               key={i}
@@ -99,6 +99,26 @@ export default function VisionNegocioSection() {
               </p>
             </div>
           ))}
+        </div>
+        {/* Monetización */}
+        <div className="mt-16 border border-[var(--color-gold)]/20 rounded-2xl p-8 md:p-12 bg-white/4 backdrop-blur-sm text-center">
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-6">
+            Monetización
+          </p>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16">
+            {[
+              { icon: "📱", label: "Compras dentro de la app" },
+              { icon: "🤝", label: "Marcas asociadas" },
+              { icon: "⌚", label: "Ediciones limitadas de pulseras" },
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-3">
+                <span className="text-2xl">{item.icon}</span>
+                <p className="font-[family-name:var(--font-barlow)] text-[var(--color-champagne)] text-sm tracking-wide">
+                  {item.label}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

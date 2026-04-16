@@ -63,14 +63,10 @@ export default function CTASection() {
 
       <div className="relative z-10 max-w-2xl">
         <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.5em] text-xs uppercase mb-8">
-          Diego ya es eterno
+          Diego es Universal
         </p>
-        <h2 className="cta-heading font-[family-name:var(--font-bebas)] text-[clamp(3rem,12vw,9rem)] text-white leading-none mb-8">
-          ¿TE IMAGINÁS
-          <br />
-          A MILLONES
-          <br />
-          CON DIEGO?
+        <h2 className="cta-heading font-[family-name:var(--font-bebas)] text-[clamp(2rem,8vw,6rem)] text-white leading-tight mb-8">
+          ¿TE IMAGINÁS A MILLONES DE PERSONAS DE TODO EL MUNDO CONECTÁNDOSE CON DIEGO AL MISMO TIEMPO?
         </h2>
         <p className="cta-body font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg md:text-xl italic leading-relaxed mb-14 max-w-xl mx-auto">
           Lo que falta es construir el lugar donde esa eternidad cobre vida de
