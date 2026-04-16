@@ -101,7 +101,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+      <div className="relative z-10 flex flex-col items-center justify-start h-full text-center px-6" style={{ paddingTop: "45vh" }}>
         <h1
           className="hero-title font-[family-name:var(--font-bebas)] text-[clamp(5rem,22vw,14rem)] leading-none text-white"
           style={{
