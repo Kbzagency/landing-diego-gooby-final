@@ -197,7 +197,7 @@ export default function GoobyUniverseSection() {
             El Sentimiento No Terminó
           </p>
 
-          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl italic leading-relaxed mb-20">
+          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl italic leading-relaxed" style={{ marginBottom: "80px" }}>
             No se trata de contenido.
             <br />
             Se trata de volver a sentir:
