@@ -104,7 +104,7 @@ export default function DemoSection() {
       <div className="py-20 md:py-28">
         <div className="text-center mb-12 px-4">
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-3">
-            La Experiencia
+            Una Experiencia
           </p>
           <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] text-white leading-none">
             PROBALO VOS MISMO
