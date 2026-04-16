@@ -65,8 +65,12 @@ export default function CTASection() {
         <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.5em] text-xs uppercase mb-8">
           Diego es Universal
         </p>
-        <h2 className="cta-heading font-[family-name:var(--font-bebas)] text-[clamp(2rem,8vw,6rem)] text-white leading-tight mb-8">
-          ¿TE IMAGINÁS A MILLONES DE PERSONAS DE TODO EL MUNDO CONECTÁNDOSE CON DIEGO AL MISMO TIEMPO?
+        <h2 className="cta-heading font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,9vw,7rem)] text-white leading-tight mb-8">
+          ¿TE IMAGINÁS A MILLONES
+          <br />
+          DE PERSONAS DE TODO EL MUNDO
+          <br />
+          CONECTADAS CON DIEGO A LA VEZ?
         </h2>
         <p className="cta-body font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg md:text-xl italic leading-relaxed mb-14 max-w-xl mx-auto">
           Lo que falta es construir el lugar donde esa eternidad cobre vida de
