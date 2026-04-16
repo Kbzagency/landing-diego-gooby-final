@@ -43,7 +43,7 @@ export default function CTASection() {
   return (
     <section
       ref={container}
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center overflow-hidden"
+      className="relative flex flex-col items-center px-6 text-center overflow-hidden py-16 md:py-24"
     >
       {/* Watermark "10" — bottom-right corner, very subtle */}
       <div
@@ -58,8 +58,6 @@ export default function CTASection() {
       >
         10
       </div>
-
-      <div className="w-px h-16 bg-gradient-to-b from-transparent to-[var(--color-gold-dim)] mb-12" />
 
       <div className="relative z-10 max-w-2xl">
         <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.5em] text-xs uppercase mb-8">
