@@ -65,7 +65,7 @@ export default function CTASection() {
         <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.5em] text-xs uppercase mb-8">
           Diego es Universal
         </p>
-        <h2 className="cta-heading font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,9vw,7rem)] text-white leading-tight mb-8">
+        <h2 className="cta-heading font-[family-name:var(--font-bebas)] text-[clamp(1.6rem,6vw,5rem)] text-white leading-tight mb-8">
           ¿TE IMAGINÁS A MILLONES
           <br />
           DE PERSONAS DE TODO EL MUNDO
