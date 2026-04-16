@@ -125,6 +125,16 @@ export default function HeroSection() {
         <p className="hero-subtitle font-[family-name:var(--font-barlow)] text-[var(--color-champagne)] text-sm md:text-base mt-3 tracking-wider max-w-sm opacity-0">
           Una nueva forma de conectar con Diego Maradona
         </p>
+        <p
+          className="hero-subtitle font-[family-name:var(--font-bebas)] text-white tracking-[0.3em] uppercase opacity-0"
+          style={{
+            fontSize: "clamp(2.5rem, 10vw, 6rem)",
+            marginTop: "30px",
+            opacity: 0,
+          }}
+        >
+          FOREVER
+        </p>
       </div>
 
       {/* Scroll indicator */}
