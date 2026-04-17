@@ -77,10 +77,10 @@ export default function GoobyUniverseSection() {
             La Respuesta
           </p>
           <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,8rem)] text-white leading-none">
-            UNIVERSO GOOBY
+            GOOBY
           </h2>
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-champagne)] text-sm md:text-base mt-6 max-w-lg mx-auto leading-relaxed" style={{ opacity: 0.85 }}>
-            GOOBY hace posible el ecosistema digital oficial de Diego: inmersivo, interactivo y participativo.
+            Hace posible el ecosistema digital oficial de Diego: inmersivo, interactivo y participativo.
           </p>
         </div>
       </section>
