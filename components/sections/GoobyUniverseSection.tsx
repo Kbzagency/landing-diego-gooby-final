@@ -252,8 +252,72 @@ export default function GoobyUniverseSection() {
             </span>
           </p>
 
+          {/* Orbe flotante — avatar influencer misterioso */}
+          <div className="flex justify-center py-12">
+            <div
+              className="mystery-orb relative flex items-center justify-center"
+              style={{
+                width: "clamp(140px, 30vw, 200px)",
+                height: "clamp(140px, 30vw, 200px)",
+                animation: "mysteryFloat 4s ease-in-out infinite",
+              }}
+            >
+              {/* Glow exterior */}
+              <div
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background: "radial-gradient(circle, rgba(212,175,55,0.35) 0%, rgba(117,170,219,0.2) 40%, transparent 70%)",
+                  filter: "blur(20px)",
+                  animation: "mysteryPulse 3s ease-in-out infinite",
+                }}
+              />
+              {/* Orbe principal */}
+              <div
+                className="relative rounded-full flex items-center justify-center overflow-hidden"
+                style={{
+                  width: "78%",
+                  height: "78%",
+                  background: "radial-gradient(circle at 30% 30%, rgba(80,80,80,0.9), rgba(10,10,10,0.98))",
+                  border: "1.5px solid rgba(212,175,55,0.45)",
+                  boxShadow: "0 0 50px rgba(212,175,55,0.35), inset 0 0 30px rgba(0,0,0,0.85)",
+                }}
+              >
+                {/* Silueta persona */}
+                <svg
+                  viewBox="0 0 100 100"
+                  className="w-3/5 h-3/5 relative z-10"
+                  fill="rgba(0,0,0,0.9)"
+                  stroke="rgba(212,175,55,0.25)"
+                  strokeWidth="0.5"
+                  aria-hidden="true"
+                >
+                  <circle cx="50" cy="34" r="15" />
+                  <path d="M22 92 Q22 62 50 62 Q78 62 78 92 Z" />
+                </svg>
+                {/* Brillo interno */}
+                <div
+                  className="absolute top-[15%] left-[20%] w-[30%] h-[30%] rounded-full opacity-40"
+                  style={{
+                    background: "radial-gradient(circle, rgba(255,255,255,0.6), transparent 70%)",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
+
+      <style jsx>{`
+        @keyframes mysteryFloat {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-12px); }
+        }
+        @keyframes mysteryPulse {
+          0%, 100% { opacity: 0.7; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.1); }
+        }
+      `}</style>
 
     </div>
   );
