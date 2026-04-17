@@ -89,8 +89,8 @@ export default function DemoSection() {
 
   return (
     <section id="experiencia" className="w-full relative overflow-hidden">
-      {/* Intro visual con título overlay */}
-      <div className="relative w-full overflow-hidden" style={{ height: "70vw", maxHeight: "420px", minHeight: "280px" }}>
+      {/* Intro visual con título overlay + orbe flotante arriba */}
+      <div className="relative w-full overflow-visible" style={{ height: "70vw", maxHeight: "420px", minHeight: "280px" }}>
         <Image
           src="/assets/images/pulsera-verificado.jpg"
           alt="Pulsera GOOBY verificando en celular"
@@ -99,7 +99,53 @@ export default function DemoSection() {
           sizes="100vw"
         />
         {/* Overlay para legibilidad del texto */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black pointer-events-none" />
+
+        {/* Orbe flotante con Diego — sobre la foto, centrado arriba */}
+        <div
+          className="mystery-orb absolute left-1/2 -translate-x-1/2 z-20 flex items-center justify-center"
+          style={{
+            top: "-45px",
+            width: "clamp(110px, 22vw, 160px)",
+            height: "clamp(110px, 22vw, 160px)",
+            animation: "mysteryFloat 4s ease-in-out infinite",
+          }}
+        >
+          {/* Glow exterior */}
+          <div
+            className="absolute inset-0 rounded-full"
+            style={{
+              background: "radial-gradient(circle, rgba(212,175,55,0.45) 0%, rgba(117,170,219,0.25) 40%, transparent 70%)",
+              filter: "blur(18px)",
+              animation: "mysteryPulse 3s ease-in-out infinite",
+            }}
+          />
+          {/* Orbe con foto de Diego */}
+          <div
+            className="relative rounded-full overflow-hidden"
+            style={{
+              width: "78%",
+              height: "78%",
+              border: "2px solid rgba(212,175,55,0.6)",
+              boxShadow: "0 0 40px rgba(212,175,55,0.5), inset 0 0 25px rgba(0,0,0,0.6)",
+            }}
+          >
+            <Image
+              src="/assets/images/diego-sonriendo.jpg"
+              alt="Diego Maradona sonriendo"
+              fill
+              className="object-cover object-center"
+              sizes="160px"
+            />
+            <div
+              className="absolute inset-0 rounded-full pointer-events-none"
+              style={{
+                background: "radial-gradient(circle at 30% 25%, rgba(255,255,255,0.15), transparent 55%)",
+                boxShadow: "inset 0 0 20px rgba(212,175,55,0.3)",
+              }}
+            />
+          </div>
+        </div>
 
         {/* Título overlay sobre la foto */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10">
@@ -119,6 +165,17 @@ export default function DemoSection() {
           </h3>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes mysteryFloat {
+          0%, 100% { transform: translate(-50%, 0); }
+          50% { transform: translate(-50%, -10px); }
+        }
+        @keyframes mysteryPulse {
+          0%, 100% { opacity: 0.7; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.1); }
+        }
+      `}</style>
 
       {/* Título PROBALO VOS MISMO debajo de la foto, arriba de los celulares */}
       <div className="text-center pt-12 md:pt-16 pb-6 px-4">

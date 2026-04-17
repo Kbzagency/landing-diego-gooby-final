@@ -30,7 +30,6 @@ export default function Page() {
         <DesafioSection />
         <SectionDivider />
         <GoobyUniverseSection />
-        <SectionDivider />
         <DemoSection />
         <SectionDivider />
         <VisionNegocioSection />
