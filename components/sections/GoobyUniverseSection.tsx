@@ -120,35 +120,54 @@ export default function GoobyUniverseSection() {
 
       {/* 5D — El Sentimiento No Terminó (movido antes de Universo Físico + Digital) */}
       <section className="w-full px-6" style={{ paddingTop: "40px", paddingBottom: "80px" }}>
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-14">
-            El Sentimiento No Terminó
-          </p>
+        <div className="max-w-6xl mx-auto">
+          {/* Header centrado */}
+          <div className="text-center max-w-2xl mx-auto">
+            <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-14">
+              El Sentimiento No Terminó
+            </p>
 
-          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl italic leading-relaxed" style={{ marginBottom: "80px" }}>
-            No se trata de contenido.
-            <br />
-            Se trata de volver a sentir:
-          </p>
+            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl italic leading-relaxed" style={{ marginBottom: "60px" }}>
+              No se trata de contenido.
+              <br />
+              Se trata de volver a sentir:
+            </p>
+          </div>
 
-          {/* Three big words */}
-          <div className="sentimiento-words space-y-6" style={{ marginBottom: "100px" }}>
-            {[
-              { text: "La magia.", color: "#D4AF37" },
-              { text: "La conexión.", color: "#75AADB" },
-              { text: "La pasión.", color: "#FFFFFF" },
-            ].map((item, i) => (
-              <p
-                key={i}
-                className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] leading-none"
-                style={{ color: item.color }}
-              >
-                {item.text}
-              </p>
-            ))}
+          {/* Palabras a la izquierda + celular AR a la derecha */}
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16" style={{ marginBottom: "80px" }}>
+            <div className="sentimiento-words space-y-6 flex-1 text-center lg:text-left">
+              {[
+                { text: "La magia.", color: "#D4AF37" },
+                { text: "La conexión.", color: "#75AADB" },
+                { text: "La pasión.", color: "#FFFFFF" },
+              ].map((item, i) => (
+                <p
+                  key={i}
+                  className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] leading-none"
+                  style={{ color: item.color }}
+                >
+                  {item.text}
+                </p>
+              ))}
+            </div>
+
+            {/* Celular AR con Diego */}
+            <div className="flex-1 w-full flex justify-center">
+              <div className="relative w-full max-w-xs aspect-[9/19]">
+                <Image
+                  src="/assets/images/diego-ar-living.png"
+                  alt="Diego Maradona apareciendo en AR en el living a través del celular"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 1024px) 100vw, 400px"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Cinematic paragraph */}
+          <div className="max-w-2xl mx-auto text-center">
           <div className="border-l-2 border-[var(--color-gold)] pl-8 text-left max-w-lg mx-auto space-y-20">
             <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
               Imaginá esto...
@@ -167,6 +186,7 @@ export default function GoobyUniverseSection() {
             <p className="font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-lg md:text-xl tracking-wider pt-4">
               Eso no es contenido. Es vínculo. Es cercanía. Es emoción real.
             </p>
+          </div>
           </div>
         </div>
       </section>
