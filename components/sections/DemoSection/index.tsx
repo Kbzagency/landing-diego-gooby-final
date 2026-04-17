@@ -334,13 +334,13 @@ export default function DemoSection() {
             onClick={() => activateMode("maradona")}
             className="font-[family-name:var(--font-barlow)] text-xs tracking-widest uppercase px-5 py-3 border border-[var(--color-gold)]/40 text-[var(--color-gold)] rounded-full hover:border-[var(--color-gold)] transition-colors"
           >
-            Ver Modo Maradoniano
+            Hablemos con Diego
           </button>
           <button
             onClick={() => activateMode("hincha")}
             className="font-[family-name:var(--font-barlow)] text-xs tracking-widest uppercase px-5 py-3 border border-[var(--color-celeste)]/40 text-[var(--color-celeste)] rounded-full hover:border-[var(--color-celeste)] transition-colors"
           >
-            Ver Modo Hincha
+            Hincha del Fútbol
           </button>
         </div>
       </div>
