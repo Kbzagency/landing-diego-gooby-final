@@ -170,7 +170,7 @@ export default function GoobyUniverseSection() {
         </div>
 
         {/* Parte inferior: texto + pasos sobre fondo limpio */}
-        <div className="max-w-2xl mx-auto px-6 text-center py-20 md:py-32">
+        <div className="max-w-2xl mx-auto px-6 text-center pt-12 pb-8 md:pt-20 md:pb-12">
           <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg italic leading-loose" style={{ marginTop: "100px", marginBottom: "100px" }}>
             Productos físicos oficiales como pulseras o camisetas de edición
             limitada. Al acercar el celular, el fan accede automáticamente al
@@ -181,7 +181,7 @@ export default function GoobyUniverseSection() {
           </p>
 
           {/* Foto 3 pasos: pulsera, celular, diego aparece */}
-          <div className="w-full max-w-5xl mx-auto mb-16">
+          <div className="w-full max-w-5xl mx-auto">
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden ring-1 ring-[var(--color-gold)]/15 shadow-2xl">
               <Image
                 src="/assets/images/3-pasos-experiencia.jpg"
@@ -193,34 +193,16 @@ export default function GoobyUniverseSection() {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20" />
             </div>
           </div>
-
-          {/* 3 steps */}
-          <div className="flex items-start justify-center gap-12 md:gap-20">
-            {[
-              { step: "01", label: "Comprás la pulsera" },
-              { step: "02", label: "Acercás el celular" },
-              { step: "03", label: "Diego aparece" },
-            ].map((item, i) => (
-              <div key={i} className="flex-1 text-center">
-                <p className="font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-5xl md:text-6xl mb-4">
-                  {item.step}
-                </p>
-                <p className="font-[family-name:var(--font-barlow)] text-white text-sm tracking-wider leading-relaxed">
-                  {item.label}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
       {/* Spacing */}
-      <div className="flex items-center justify-center py-16 md:py-28">
-        <div className="w-px h-20 bg-gradient-to-b from-transparent via-[var(--color-gold-dim)]/20 to-transparent" />
+      <div className="flex items-center justify-center py-6 md:py-8">
+        <div className="w-px h-10 bg-gradient-to-b from-transparent via-[var(--color-gold-dim)]/20 to-transparent" />
       </div>
 
       {/* 5D — El Sentimiento No Terminó */}
-      <section className="w-full py-32 md:py-48 px-6" style={{ paddingTop: "100px" }}>
+      <section className="w-full px-6" style={{ paddingTop: "40px", paddingBottom: "80px" }}>
         <div className="max-w-2xl mx-auto text-center">
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-14">
             El Sentimiento No Terminó
