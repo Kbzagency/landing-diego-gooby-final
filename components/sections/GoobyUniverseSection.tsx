@@ -154,7 +154,7 @@ export default function GoobyUniverseSection() {
 
             {/* Celular AR con Diego (chico) */}
             <div className="flex-shrink-0">
-              <div className="relative aspect-[9/19]" style={{ width: "clamp(90px, 18vw, 140px)" }}>
+              <div className="relative aspect-[9/19]" style={{ width: "clamp(180px, 36vw, 280px)" }}>
                 <Image
                   src="/assets/images/diego-ar-living.png"
                   alt="Diego Maradona apareciendo en AR en el living a través del celular"
