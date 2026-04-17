@@ -89,8 +89,39 @@ export default function DemoSection() {
 
   return (
     <section id="experiencia" className="w-full relative overflow-hidden">
-      {/* Title above photo */}
-      <div className="text-center pt-20 pb-10 px-4">
+      {/* Intro visual con título overlay */}
+      <div className="relative w-full overflow-hidden" style={{ height: "70vw", maxHeight: "420px", minHeight: "280px" }}>
+        <Image
+          src="/assets/images/pulsera-verificado.jpg"
+          alt="Pulsera GOOBY verificando en celular"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        {/* Overlay para legibilidad del texto */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black" />
+
+        {/* Título overlay sobre la foto */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10">
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.35em] text-[10px] md:text-xs uppercase mb-4">
+            Spoiler
+          </p>
+          <h3
+            className="font-[family-name:var(--font-bebas)] text-white leading-tight tracking-wide max-w-2xl"
+            style={{
+              fontSize: "clamp(1.5rem, 5.5vw, 3.5rem)",
+              textShadow: "0 2px 30px rgba(0,0,0,0.9), 0 0 60px rgba(0,0,0,0.6)",
+            }}
+          >
+            UN INFLUENCER FANÁTICO DEL DIEGO
+            <br />
+            TIENE LA PULSERA OFICIAL
+          </h3>
+        </div>
+      </div>
+
+      {/* Título PROBALO VOS MISMO debajo de la foto, arriba de los celulares */}
+      <div className="text-center pt-12 md:pt-16 pb-6 px-4">
         <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-3">
           Una Experiencia
         </p>
@@ -99,21 +130,9 @@ export default function DemoSection() {
         </h2>
       </div>
 
-      {/* Intro visual */}
-      <div className="relative w-full h-[45vw] max-h-64 overflow-hidden">
-        <Image
-          src="/assets/images/pulsera-verificado.jpg"
-          alt="Pulsera GOOBY verificando en celular"
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black" />
-      </div>
-
-      <div className="py-20 md:py-28">
+      <div className="pb-20 md:pb-28">
         <div className="text-center mb-12 px-4">
-          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-text-secondary)] text-sm max-w-xs mx-auto" style={{ marginTop: "0px" }}>
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-text-secondary)] text-sm max-w-xs mx-auto" style={{ marginTop: "20px" }}>
             Arrastrá la pulsera hacia un celular
           </p>
         </div>
