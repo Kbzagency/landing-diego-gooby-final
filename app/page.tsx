@@ -8,6 +8,7 @@ import SliderSection from "@/components/sections/SliderSection";
 import CTASection from "@/components/sections/CTASection";
 import Navbar from "@/components/ui/Navbar";
 import CustomCursor from "@/components/ui/CustomCursor";
+import MobileOnlyGate from "@/components/ui/MobileOnlyGate";
 
 function SectionDivider() {
   return (
@@ -20,6 +21,7 @@ function SectionDivider() {
 export default function Page() {
   return (
     <>
+      <MobileOnlyGate />
       <Navbar />
       <CustomCursor />
       <main className="bg-[var(--color-void)]">
