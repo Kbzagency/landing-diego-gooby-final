@@ -343,6 +343,20 @@ export default function DemoSection() {
             Hincha del Fútbol
           </button>
         </div>
+
+        {/* Foto GRACIAS D10S pulseras + Gooby app */}
+        <div className="w-full max-w-5xl mx-auto px-4 md:px-6 mt-16 md:mt-20">
+          <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden ring-1 ring-[var(--color-gold)]/15 shadow-2xl">
+            <Image
+              src="/assets/images/gracias-d10s-pulseras.jpg"
+              alt="Pulseras Gracias D10S y Por Ser Argentino con Gooby app y Diego Maradona festejando"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" />
+          </div>
+        </div>
       </div>
 
       {/* Fullscreen mode overlays */}
