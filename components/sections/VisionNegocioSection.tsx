@@ -102,7 +102,7 @@ export default function VisionNegocioSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" style={{ marginBottom: "80px" }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {PILARES.map((pilar, i) => (
             <div
               key={i}
@@ -119,7 +119,7 @@ export default function VisionNegocioSection() {
           ))}
         </div>
         {/* Monetización */}
-        <div className="mt-16 border border-[var(--color-gold)]/15 rounded-2xl p-6 md:p-8 bg-white/4 backdrop-blur-sm text-center">
+        <div className="mt-6 border border-[var(--color-gold)]/15 rounded-2xl p-6 md:p-8 bg-white/4 backdrop-blur-sm text-center">
           <span className="text-4xl mb-4 block">💰</span>
           <h3 className="font-[family-name:var(--font-bebas)] text-xl md:text-2xl text-[var(--color-gold)] mb-4 tracking-wider">
             Monetización
