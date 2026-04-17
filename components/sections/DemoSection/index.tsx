@@ -189,7 +189,7 @@ export default function DemoSection() {
 
       <div className="pb-20 md:pb-28">
         <div className="text-center mb-12 px-4">
-          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-text-secondary)] text-sm md:text-base max-w-md mx-auto" style={{ marginTop: "20px" }}>
+          <p className="font-[family-name:var(--font-barlow)] font-bold text-white max-w-2xl mx-auto leading-tight" style={{ marginTop: "20px", fontSize: "clamp(1.3rem, 4.5vw, 2.2rem)" }}>
             Acercá la pulsera a tu celular o al de otra persona.
           </p>
         </div>
