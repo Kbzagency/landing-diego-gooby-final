@@ -118,11 +118,6 @@ export default function GoobyUniverseSection() {
         </div>
       </section>
 
-      {/* Spacing between sub-sections */}
-      <div className="flex items-center justify-center py-12 md:py-20">
-        <div className="w-px h-16 bg-gradient-to-b from-transparent via-[var(--color-gold-dim)]/20 to-transparent" />
-      </div>
-
       {/* 5D — El Sentimiento No Terminó (movido antes de Universo Físico + Digital) */}
       <section className="w-full px-6" style={{ paddingTop: "40px", paddingBottom: "80px" }}>
         <div className="max-w-2xl mx-auto text-center">
