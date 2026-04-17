@@ -180,7 +180,7 @@ export default function DemoSection() {
       {/* Título PROBALO VOS MISMO debajo de la foto, arriba de los celulares */}
       <div className="text-center pt-12 md:pt-16 pb-6 px-4">
         <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-3">
-          Una Experiencia
+          Dos Experiencias Distintas
         </p>
         <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] text-white leading-none">
           PROBALO VOS MISMO
