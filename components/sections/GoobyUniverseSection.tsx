@@ -134,9 +134,9 @@ export default function GoobyUniverseSection() {
             </p>
           </div>
 
-          {/* Palabras a la izquierda + celular AR a la derecha */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16" style={{ marginBottom: "80px" }}>
-            <div className="sentimiento-words space-y-6 flex-1 text-center lg:text-left">
+          {/* Palabras + celular AR (chico) al costado */}
+          <div className="flex flex-row items-center justify-center gap-4 md:gap-10" style={{ marginBottom: "80px" }}>
+            <div className="sentimiento-words space-y-4 md:space-y-6 text-right">
               {[
                 { text: "La magia.", color: "#D4AF37" },
                 { text: "La conexión.", color: "#75AADB" },
@@ -144,7 +144,7 @@ export default function GoobyUniverseSection() {
               ].map((item, i) => (
                 <p
                   key={i}
-                  className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] leading-none"
+                  className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(2rem,8vw,5rem)] leading-none"
                   style={{ color: item.color }}
                 >
                   {item.text}
@@ -152,15 +152,15 @@ export default function GoobyUniverseSection() {
               ))}
             </div>
 
-            {/* Celular AR con Diego */}
-            <div className="flex-1 w-full flex justify-center">
-              <div className="relative w-full max-w-xs aspect-[9/19]">
+            {/* Celular AR con Diego (chico) */}
+            <div className="flex-shrink-0">
+              <div className="relative aspect-[9/19]" style={{ width: "clamp(90px, 18vw, 140px)" }}>
                 <Image
                   src="/assets/images/diego-ar-living.png"
                   alt="Diego Maradona apareciendo en AR en el living a través del celular"
                   fill
                   className="object-contain"
-                  sizes="(max-width: 1024px) 100vw, 400px"
+                  sizes="140px"
                 />
               </div>
             </div>
