@@ -123,6 +123,64 @@ export default function GoobyUniverseSection() {
         <div className="w-px h-16 bg-gradient-to-b from-transparent via-[var(--color-gold-dim)]/20 to-transparent" />
       </div>
 
+      {/* 5D — El Sentimiento No Terminó (movido antes de Universo Físico + Digital) */}
+      <section className="w-full px-6" style={{ paddingTop: "40px", paddingBottom: "80px" }}>
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-14">
+            El Sentimiento No Terminó
+          </p>
+
+          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl italic leading-relaxed" style={{ marginBottom: "80px" }}>
+            No se trata de contenido.
+            <br />
+            Se trata de volver a sentir:
+          </p>
+
+          {/* Three big words */}
+          <div className="sentimiento-words space-y-6" style={{ marginBottom: "100px" }}>
+            {[
+              { text: "La magia.", color: "#D4AF37" },
+              { text: "La conexión.", color: "#75AADB" },
+              { text: "La pasión.", color: "#FFFFFF" },
+            ].map((item, i) => (
+              <p
+                key={i}
+                className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] leading-none"
+                style={{ color: item.color }}
+              >
+                {item.text}
+              </p>
+            ))}
+          </div>
+
+          {/* Cinematic paragraph */}
+          <div className="border-l-2 border-[var(--color-gold)] pl-8 text-left max-w-lg mx-auto space-y-20">
+            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
+              Imaginá esto...
+            </p>
+            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
+              Un fan abre su celular y...
+            </p>
+            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
+              De repente Diego atraviesa la pantalla y aparece en su casa. Está
+              en su living, para poder sacarse una foto. Y lo comparte.
+            </p>
+            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
+              Ahora imaginá esto multiplicado por millones de personas en todo
+              el mundo, al mismo tiempo.
+            </p>
+            <p className="font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-lg md:text-xl tracking-wider pt-4">
+              Eso no es contenido. Es vínculo. Es cercanía. Es emoción real.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Spacing between sub-sections */}
+      <div className="flex items-center justify-center py-12 md:py-20">
+        <div className="w-px h-16 bg-gradient-to-b from-transparent via-[var(--color-gold-dim)]/20 to-transparent" />
+      </div>
+
       {/* 5C — Universo Físico + Digital */}
       <section className="fisico-digital w-full overflow-hidden">
         {/* Parte superior: foto + título */}
@@ -196,63 +254,6 @@ export default function GoobyUniverseSection() {
         </div>
       </section>
 
-      {/* Spacing */}
-      <div className="flex items-center justify-center py-6 md:py-8">
-        <div className="w-px h-10 bg-gradient-to-b from-transparent via-[var(--color-gold-dim)]/20 to-transparent" />
-      </div>
-
-      {/* 5D — El Sentimiento No Terminó */}
-      <section className="w-full px-6" style={{ paddingTop: "40px", paddingBottom: "80px" }}>
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-14">
-            El Sentimiento No Terminó
-          </p>
-
-          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl italic leading-relaxed" style={{ marginBottom: "80px" }}>
-            No se trata de contenido.
-            <br />
-            Se trata de volver a sentir:
-          </p>
-
-          {/* Three big words */}
-          <div className="sentimiento-words space-y-6" style={{ marginBottom: "100px" }}>
-            {[
-              { text: "La magia.", color: "#D4AF37" },
-              { text: "La conexión.", color: "#75AADB" },
-              { text: "La pasión.", color: "#FFFFFF" },
-            ].map((item, i) => (
-              <p
-                key={i}
-                className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] leading-none"
-                style={{ color: item.color }}
-              >
-                {item.text}
-              </p>
-            ))}
-          </div>
-
-          {/* Cinematic paragraph */}
-          <div className="border-l-2 border-[var(--color-gold)] pl-8 text-left max-w-lg mx-auto space-y-20">
-            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
-              Imaginá esto...
-            </p>
-            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
-              Un fan abre su celular y...
-            </p>
-            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
-              De repente Diego atraviesa la pantalla y aparece en su casa. Está
-              en su living, para poder sacarse una foto. Y lo comparte.
-            </p>
-            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
-              Ahora imaginá esto multiplicado por millones de personas en todo
-              el mundo, al mismo tiempo.
-            </p>
-            <p className="font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-lg md:text-xl tracking-wider pt-4">
-              Eso no es contenido. Es vínculo. Es cercanía. Es emoción real.
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
