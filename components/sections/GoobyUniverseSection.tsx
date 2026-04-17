@@ -242,8 +242,8 @@ export default function GoobyUniverseSection() {
         </div>
 
         {/* Parte inferior: texto + pasos sobre fondo limpio */}
-        <div className="max-w-2xl mx-auto px-6 text-center pt-12 pb-8 md:pt-20 md:pb-12">
-          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg italic leading-loose" style={{ marginTop: "100px", marginBottom: "100px" }}>
+        <div className="max-w-2xl mx-auto px-6 text-center pt-4 pb-8 md:pt-6 md:pb-12">
+          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg italic leading-loose" style={{ marginTop: "20px", marginBottom: "60px" }}>
             Productos físicos oficiales como pulseras o camisetas de edición
             limitada. Al acercar el celular, el fan accede automáticamente al
             universo Maradona con un{" "}
