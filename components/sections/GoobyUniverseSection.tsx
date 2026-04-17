@@ -203,32 +203,51 @@ export default function GoobyUniverseSection() {
 
       {/* 5D — El Sentimiento No Terminó */}
       <section className="w-full px-6" style={{ paddingTop: "40px", paddingBottom: "80px" }}>
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-14">
-            El Sentimiento No Terminó
-          </p>
-
-          <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl italic leading-relaxed" style={{ marginBottom: "80px" }}>
-            No se trata de contenido.
-            <br />
-            Se trata de volver a sentir:
-          </p>
-
-          {/* Three big words */}
-          <div className="sentimiento-words space-y-6" style={{ marginBottom: "100px" }}>
-            {[
-              { text: "La magia.", color: "#D4AF37" },
-              { text: "La conexión.", color: "#75AADB" },
-              { text: "La pasión.", color: "#FFFFFF" },
-            ].map((item, i) => (
-              <p
-                key={i}
-                className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,10vw,7rem)] leading-none"
-                style={{ color: item.color }}
-              >
-                {item.text}
+        <div className="max-w-6xl mx-auto">
+          {/* Layout split: texto a la izquierda, celular AR a la derecha */}
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16" style={{ marginBottom: "60px" }}>
+            {/* Texto a la izquierda */}
+            <div className="flex-1 text-left w-full">
+              <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-10">
+                El Sentimiento No Terminó
               </p>
-            ))}
+
+              <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl italic leading-relaxed mb-10">
+                No se trata de contenido.
+                <br />
+                Se trata de volver a sentir:
+              </p>
+
+              {/* Three big words */}
+              <div className="sentimiento-words space-y-4">
+                {[
+                  { text: "La magia.", color: "#D4AF37" },
+                  { text: "La conexión.", color: "#75AADB" },
+                  { text: "La pasión.", color: "#FFFFFF" },
+                ].map((item, i) => (
+                  <p
+                    key={i}
+                    className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,8vw,5.5rem)] leading-none"
+                    style={{ color: item.color }}
+                  >
+                    {item.text}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            {/* Celular AR a la derecha */}
+            <div className="flex-1 w-full flex justify-center">
+              <div className="relative w-full max-w-sm aspect-[9/16]">
+                <Image
+                  src="/assets/images/diego-ar-living.png"
+                  alt="Diego Maradona apareciendo en AR en el living desde el celular"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 1024px) 100vw, 500px"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Cinematic paragraph */}
