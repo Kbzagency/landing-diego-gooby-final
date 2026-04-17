@@ -84,9 +84,17 @@ export default function VisionNegocioSection() {
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-4">
             Visión
           </p>
-          <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2rem,8vw,6rem)] text-white leading-none">
-            UN LEGADO SOSTENIBLE
+          <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2rem,8vw,6rem)] text-white leading-tight">
+            UN LEGADO
+            <br />
+            UN SENTIMIENTO
           </h2>
+          <p className="font-[family-name:var(--font-bebas)] text-[var(--color-celeste)] text-xl md:text-2xl tracking-[0.15em] mt-8">
+            HINCHA DEL FÚTBOL ARGENTINO
+          </p>
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.3em] text-xs md:text-sm uppercase mt-4">
+            Verificado por Maradona
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" style={{ marginBottom: "80px" }}>
