@@ -79,12 +79,14 @@ export default function MomentoHistoricoSection() {
             El Camino
           </p>
           <h2 className="momento-title font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,7vw,5.5rem)] text-white leading-tight mb-8">
-            HASTA HOY,
+            EL LEGADO DE DIEGO,
             <br />
-            EL LEGADO SE RECUERDA.
+            AHORA SE VIVE EN CADA
+            <br />
+            FAN
           </h2>
           <p className="momento-narrative font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl leading-relaxed italic">
-            Ahora puede vivirse.
+            Una nueva forma de conectar con Diego Maradona.
           </p>
         </div>
       </div>
