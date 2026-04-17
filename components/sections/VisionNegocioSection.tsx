@@ -121,23 +121,12 @@ export default function VisionNegocioSection() {
         {/* Monetización */}
         <div className="mt-16 border border-[var(--color-gold)]/15 rounded-2xl p-6 md:p-8 bg-white/4 backdrop-blur-sm text-center">
           <span className="text-4xl mb-4 block">💰</span>
-          <h3 className="font-[family-name:var(--font-bebas)] text-xl md:text-2xl text-[var(--color-gold)] mb-6 tracking-wider">
+          <h3 className="font-[family-name:var(--font-bebas)] text-xl md:text-2xl text-[var(--color-gold)] mb-4 tracking-wider">
             Monetización
           </h3>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-10">
-            {[
-              { icon: "📱", label: "Compras dentro de la app" },
-              { icon: "🤝", label: "Marcas asociadas" },
-              { icon: "⌚", label: "Ediciones limitadas de pulseras" },
-            ].map((item, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <span className="text-xl md:text-2xl">{item.icon}</span>
-                <p className="font-[family-name:var(--font-barlow)] text-[var(--color-text-secondary)] text-sm leading-relaxed">
-                  {item.label}
-                </p>
-              </div>
-            ))}
-          </div>
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-text-secondary)] text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+            Compras dentro de la app. Sponsorships. Ediciones limitadas de productos físicos.
+          </p>
         </div>
       </div>
     </section>
