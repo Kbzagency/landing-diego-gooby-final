@@ -252,6 +252,60 @@ export default function GoobyUniverseSection() {
             </span>
           </p>
 
+          {/* Influencer misterioso */}
+          <div className="flex flex-col items-center mt-16 mb-8">
+            {/* Silueta misteriosa */}
+            <div className="relative mb-8">
+              <div
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full flex items-center justify-center relative overflow-hidden"
+                style={{
+                  background: "linear-gradient(135deg, rgba(117,170,219,0.15), rgba(212,175,55,0.1))",
+                  border: "2px solid rgba(212,175,55,0.3)",
+                  boxShadow: "0 0 40px rgba(117,170,219,0.25), inset 0 0 30px rgba(0,0,0,0.6)",
+                }}
+              >
+                {/* Silueta SVG */}
+                <svg
+                  viewBox="0 0 100 100"
+                  className="w-20 h-20 md:w-24 md:h-24"
+                  fill="rgba(0,0,0,0.75)"
+                  aria-hidden="true"
+                >
+                  <circle cx="50" cy="32" r="16" />
+                  <path d="M20 92 Q20 60 50 60 Q80 60 80 92 Z" />
+                </svg>
+                {/* Signo de pregunta superpuesto */}
+                <span
+                  className="absolute font-[family-name:var(--font-bebas)] text-[var(--color-gold)]"
+                  style={{
+                    fontSize: "4rem",
+                    textShadow: "0 0 20px rgba(212,175,55,0.6)",
+                    lineHeight: 1,
+                  }}
+                >
+                  ?
+                </span>
+              </div>
+              {/* Bandera argentina sutil */}
+              <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex gap-0.5 px-3 py-1 rounded-full bg-black/80 backdrop-blur-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#75AADB]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-white" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#75AADB]" />
+              </div>
+            </div>
+
+            <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.35em] text-[10px] md:text-xs uppercase mb-3">
+              Spoiler
+            </p>
+            <h3 className="font-[family-name:var(--font-bebas)] text-white text-[clamp(1.8rem,6vw,3.5rem)] leading-tight tracking-wide text-center max-w-xl">
+              UN INFLUENCER FANÁTICO
+              <br />
+              DEL DIEGO
+              <br />
+              TIENE SU PULSERA
+            </h3>
+          </div>
+
         </div>
       </section>
 
