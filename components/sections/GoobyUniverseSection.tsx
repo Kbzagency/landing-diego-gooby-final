@@ -155,6 +155,20 @@ export default function GoobyUniverseSection() {
           </div>
         </div>
 
+        {/* Foto de portada: productos físicos Maradona */}
+        <div className="w-full max-w-5xl mx-auto px-6 mt-12 md:mt-16">
+          <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden ring-1 ring-[var(--color-gold)]/15 shadow-2xl">
+            <Image
+              src="/assets/images/maradona-merch.jpg"
+              alt="Productos oficiales Maradona: botella, remera, bolso, gorra, pulsera, llavero — todos con certificado digital"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30" />
+          </div>
+        </div>
+
         {/* Parte inferior: texto + pasos sobre fondo limpio */}
         <div className="max-w-2xl mx-auto px-6 text-center py-20 md:py-32">
           <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg italic leading-loose" style={{ marginTop: "100px", marginBottom: "100px" }}>
