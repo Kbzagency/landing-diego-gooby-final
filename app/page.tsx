@@ -31,7 +31,6 @@ export default function Page() {
         <SectionDivider />
         <GoobyUniverseSection />
         <DemoSection />
-        <SectionDivider />
         <VisionNegocioSection />
         <SectionDivider />
         <SliderSection />

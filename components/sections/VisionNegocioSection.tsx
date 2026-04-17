@@ -64,8 +64,7 @@ export default function VisionNegocioSection() {
     <section
       id="legado"
       ref={container}
-      className="relative w-full py-24 md:py-32 overflow-hidden"
-      style={{ paddingTop: "100px" }}
+      className="relative w-full pt-12 pb-24 md:pt-16 md:pb-32 overflow-hidden"
     >
       <div className="absolute inset-0">
         <Image
