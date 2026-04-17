@@ -119,11 +119,11 @@ export default function HeroSection() {
         >
           Por ser argentino
         </p>
-        <p className="hero-subtitle font-[family-name:var(--font-barlow)] text-[var(--color-champagne)] text-sm md:text-base mt-6 tracking-wider max-w-sm opacity-0">
+        <p className="hero-subtitle font-[family-name:var(--font-barlow)] text-[var(--color-gold)] text-sm md:text-base mt-6 tracking-wider max-w-sm opacity-0">
           Conectados a Diego Maradona
         </p>
         <p
-          className="hero-subtitle font-[family-name:var(--font-bebas)] text-white tracking-[0.3em] uppercase opacity-0"
+          className="hero-subtitle font-[family-name:var(--font-bebas)] text-[var(--color-gold)] tracking-[0.3em] uppercase opacity-0"
           style={{
             fontSize: "clamp(2.5rem, 10vw, 6rem)",
             marginTop: "30px",
