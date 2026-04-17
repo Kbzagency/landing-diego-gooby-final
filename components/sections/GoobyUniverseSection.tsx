@@ -271,34 +271,35 @@ export default function GoobyUniverseSection() {
                   animation: "mysteryPulse 3s ease-in-out infinite",
                 }}
               />
-              {/* Orbe principal */}
+              {/* Orbe principal con foto de Diego */}
               <div
-                className="relative rounded-full flex items-center justify-center overflow-hidden"
+                className="relative rounded-full overflow-hidden"
                 style={{
                   width: "78%",
                   height: "78%",
-                  background: "radial-gradient(circle at 30% 30%, rgba(80,80,80,0.9), rgba(10,10,10,0.98))",
-                  border: "1.5px solid rgba(212,175,55,0.45)",
-                  boxShadow: "0 0 50px rgba(212,175,55,0.35), inset 0 0 30px rgba(0,0,0,0.85)",
+                  border: "1.5px solid rgba(212,175,55,0.5)",
+                  boxShadow: "0 0 50px rgba(212,175,55,0.4), inset 0 0 30px rgba(0,0,0,0.6)",
                 }}
               >
-                {/* Silueta persona */}
-                <svg
-                  viewBox="0 0 100 100"
-                  className="w-3/5 h-3/5 relative z-10"
-                  fill="rgba(0,0,0,0.9)"
-                  stroke="rgba(212,175,55,0.25)"
-                  strokeWidth="0.5"
-                  aria-hidden="true"
-                >
-                  <circle cx="50" cy="34" r="15" />
-                  <path d="M22 92 Q22 62 50 62 Q78 62 78 92 Z" />
-                </svg>
-                {/* Brillo interno */}
+                <Image
+                  src="/assets/images/diego-sonriendo.jpg"
+                  alt="Diego Maradona sonriendo"
+                  fill
+                  className="object-cover object-center"
+                  sizes="200px"
+                />
+                {/* Glow interno sobre la foto */}
                 <div
-                  className="absolute top-[15%] left-[20%] w-[30%] h-[30%] rounded-full opacity-40"
+                  className="absolute inset-0 rounded-full"
                   style={{
-                    background: "radial-gradient(circle, rgba(255,255,255,0.6), transparent 70%)",
+                    background: "radial-gradient(circle at 30% 25%, rgba(255,255,255,0.2), transparent 50%)",
+                  }}
+                />
+                {/* Brillo dorado sutil */}
+                <div
+                  className="absolute inset-0 rounded-full pointer-events-none"
+                  style={{
+                    boxShadow: "inset 0 0 25px rgba(212,175,55,0.25)",
                   }}
                 />
               </div>
