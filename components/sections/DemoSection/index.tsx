@@ -88,7 +88,7 @@ export default function DemoSection() {
   }, []);
 
   return (
-    <section id="experiencia" className="w-full relative overflow-hidden">
+    <section id="experiencia" className="w-full relative overflow-x-hidden" style={{ paddingTop: "60px" }}>
       {/* Intro visual con título overlay + orbe flotante arriba */}
       <div className="relative w-full overflow-visible" style={{ height: "70vw", maxHeight: "420px", minHeight: "280px" }}>
         <Image
@@ -105,9 +105,9 @@ export default function DemoSection() {
         <div
           className="mystery-orb absolute left-1/2 -translate-x-1/2 z-20 flex items-center justify-center"
           style={{
-            top: "-45px",
-            width: "clamp(110px, 22vw, 160px)",
-            height: "clamp(110px, 22vw, 160px)",
+            top: "-70px",
+            width: "clamp(130px, 26vw, 180px)",
+            height: "clamp(130px, 26vw, 180px)",
             animation: "mysteryFloat 4s ease-in-out infinite",
           }}
         >
