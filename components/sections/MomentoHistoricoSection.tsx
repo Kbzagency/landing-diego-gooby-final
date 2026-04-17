@@ -84,7 +84,9 @@ export default function MomentoHistoricoSection() {
             AHORA SE VIVE EN CADA FAN
           </h2>
           <p className="momento-narrative font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-xl md:text-2xl leading-relaxed italic">
-            Una nueva forma de conectar con Diego Maradona.
+            Una nueva forma de conectar
+            <br />
+            con Diego Maradona.
           </p>
         </div>
       </div>
