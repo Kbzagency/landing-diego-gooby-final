@@ -78,16 +78,13 @@ export default function MomentoHistoricoSection() {
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-16">
             1986 en México
           </p>
-          <h2 className="momento-title font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,7vw,5.5rem)] text-white leading-none mb-8">
-            Hace 40 años
+          <h2 className="momento-title font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,7vw,5.5rem)] text-white leading-tight mb-8">
+            EL LEGADO DE DIEGO
             <br />
-            el mundo fue testigo
-            <br />
-            de algo único
+            AHORA SE VIVE EN CADA FAN
           </h2>
           <p className="momento-narrative font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-lg leading-relaxed italic">
-            Diego Maradona no solo hizo historia. La transformó en una emoción
-            eterna que atraviesa generaciones, países y culturas.
+            Una nueva forma de conectar con Diego Maradona.
           </p>
         </div>
       </div>
