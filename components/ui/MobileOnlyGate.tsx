@@ -15,15 +15,16 @@ export default function MobileOnlyGate() {
     setMounted(true);
 
     const checkDevice = () => {
-      // Consider "mobile" anything under 768px OR with a touch-only UA
       const width = window.innerWidth;
       const ua = navigator.userAgent || "";
       const isMobileUA =
         /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
 
-      // If width is large (tablet/desktop) AND not a mobile UA, show gate.
-      // Tablets typically have 768-1024px width; user wants to block those too.
-      const isMobile = width < 768 && isMobileUA;
+      // Consider el dispositivo MÓVIL si:
+      //  - el UA es mobile (celular real), O
+      //  - el ancho es chico (< 768px)
+      // Solo mostramos el cartel si NO es móvil (tablet grande / PC / laptop).
+      const isMobile = isMobileUA || width < 768;
       setShowGate(!isMobile);
     };
 
