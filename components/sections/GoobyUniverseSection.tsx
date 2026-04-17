@@ -220,9 +220,7 @@ export default function GoobyUniverseSection() {
               TAMBIÉN VIVE
               <br />
               <br />
-              FUERA DE LA
-              <br />
-              PANTALLA
+              <span className="whitespace-nowrap">FUERA DE LA PANTALLA</span>
             </h2>
           </div>
         </div>
