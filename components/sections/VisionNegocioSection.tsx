@@ -119,7 +119,7 @@ export default function VisionNegocioSection() {
           ))}
         </div>
         {/* Monetización */}
-        <div className="mt-6 border border-[var(--color-gold)]/15 rounded-2xl p-6 md:p-8 bg-white/4 backdrop-blur-sm text-center">
+        <div className="border border-[var(--color-gold)]/15 rounded-2xl p-6 md:p-8 bg-white/4 backdrop-blur-sm text-center" style={{ marginTop: "40px" }}>
           <span className="text-4xl mb-4 block">💰</span>
           <h3 className="font-[family-name:var(--font-bebas)] text-xl md:text-2xl text-[var(--color-gold)] mb-4 tracking-wider">
             Monetización
