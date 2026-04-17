@@ -89,16 +89,16 @@ export default function VisionNegocioSection() {
           <p className="font-[family-name:var(--font-bebas)] text-[var(--color-celeste)] text-xl md:text-3xl tracking-[0.12em] mt-10 max-w-3xl mx-auto leading-tight">
             MILLONES DE HINCHAS
             <br />
-            EN TODO EL MUNDO SON
+            EN TODO EL MUNDO
           </p>
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-champagne)] text-sm md:text-base mt-6 max-w-2xl mx-auto leading-relaxed">
-            Usuarios verificados de la experiencia de autenticidad
+            Son usuarios verificados de una experiencia auténtica
           </p>
           <p className="font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-2xl md:text-4xl tracking-[0.2em] mt-4">
             GRACIAS D10S
           </p>
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.3em] text-xs md:text-sm uppercase mt-3">
-            Oficial de la marca Maradona
+            Marca oficial de los herederos Maradona
           </p>
         </div>
 
