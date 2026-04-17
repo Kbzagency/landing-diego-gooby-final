@@ -119,7 +119,7 @@ export default function GoobyUniverseSection() {
       </section>
 
       {/* 5D — El Sentimiento No Terminó (movido antes de Universo Físico + Digital) */}
-      <section className="w-full px-6" style={{ paddingTop: "40px", paddingBottom: "80px" }}>
+      <section className="w-full px-6" style={{ paddingTop: "40px", paddingBottom: "0px" }}>
         <div className="max-w-6xl mx-auto">
           {/* Header centrado */}
           <div className="text-center max-w-2xl mx-auto">
@@ -195,15 +195,10 @@ export default function GoobyUniverseSection() {
         </div>
       </section>
 
-      {/* Spacing between sub-sections */}
-      <div className="flex items-center justify-center py-12 md:py-20">
-        <div className="w-px h-16 bg-gradient-to-b from-transparent via-[var(--color-gold-dim)]/20 to-transparent" />
-      </div>
-
       {/* 5C — Universo Físico + Digital */}
       <section className="fisico-digital w-full overflow-hidden">
         {/* Parte superior: foto + título */}
-        <div className="relative w-full py-32 md:py-44 overflow-hidden">
+        <div className="relative w-full py-16 md:py-24 overflow-hidden">
           <div className="absolute inset-0">
             <Image
               src="/assets/images/pulsera-caja.jpg"
