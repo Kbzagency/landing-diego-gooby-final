@@ -345,7 +345,7 @@ export default function DemoSection() {
         </div>
 
         {/* Foto GRACIAS D10S pulseras + Gooby app */}
-        <div className="w-full max-w-5xl mx-auto px-4 md:px-6 mt-16 md:mt-20">
+        <div className="w-full max-w-5xl mx-auto px-4 md:px-6" style={{ marginTop: "60px", marginBottom: "60px" }}>
           <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden ring-1 ring-[var(--color-gold)]/15 shadow-2xl">
             <Image
               src="/assets/images/gracias-d10s-pulseras.jpg"
