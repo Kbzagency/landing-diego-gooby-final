@@ -179,6 +179,21 @@ export default function GoobyUniverseSection() {
               certificado digital auténtico e irrepetible.
             </span>
           </p>
+
+          {/* Foto 3 pasos: pulsera, celular, diego aparece */}
+          <div className="w-full max-w-5xl mx-auto mb-16">
+            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden ring-1 ring-[var(--color-gold)]/15 shadow-2xl">
+              <Image
+                src="/assets/images/3-pasos-experiencia.jpg"
+                alt="3 pasos: comprás la pulsera, acercás el celular, Diego aparece"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 1024px"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20" />
+            </div>
+          </div>
+
           {/* 3 steps */}
           <div className="flex items-start justify-center gap-12 md:gap-20">
             {[
