@@ -21,23 +21,12 @@ export default function DesafioSection() {
         {/* Texto debajo */}
         <div className="text-center">
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-10">
-            El Desafío
+            El Camino
           </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-[clamp(1.4rem,4vw,3rem)] text-white leading-relaxed italic mb-10">
-            &ldquo;¿Cómo unimos a quienes lo vieron en México 86 y a las nuevas
-            generaciones para que puedan{" "}
-            <span className="text-[var(--color-gold)]">
-              ser parte de su historia
-            </span>
-            ?&rdquo;
-          </h2>
-          <div className="w-px h-16 bg-gradient-to-b from-[var(--color-gold-dim)] to-transparent mx-auto mb-10" />
-          <h2 className="font-[family-name:var(--font-playfair)] text-[clamp(1.4rem,4vw,3rem)] text-white leading-relaxed italic">
-            &ldquo;¿Y cómo transformamos ese recuerdo en{" "}
-            <span className="text-[var(--color-gold)]">
-              una experiencia real
-            </span>
-            ?&rdquo;
+          <h2 className="font-[family-name:var(--font-playfair)] text-[clamp(1.6rem,4.5vw,3rem)] text-white leading-relaxed italic">
+            Hasta hoy, el legado se recuerda.
+            <br />
+            <span className="text-[var(--color-gold)]">Ahora puede vivirse.</span>
           </h2>
         </div>
       </div>
