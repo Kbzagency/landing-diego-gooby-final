@@ -89,11 +89,11 @@ export default function VisionNegocioSection() {
             <br />
             UN SENTIMIENTO
           </h2>
-          <p className="font-[family-name:var(--font-bebas)] text-[var(--color-celeste)] text-xl md:text-2xl tracking-[0.15em] mt-8">
-            HINCHAS DEL FÚTBOL ARGENTINO
+          <p className="font-[family-name:var(--font-bebas)] text-[var(--color-celeste)] text-xl md:text-2xl tracking-[0.15em] mt-8 max-w-3xl mx-auto leading-tight">
+            HINCHAS DEL FÚTBOL ARGENTINO DE TODO EL MUNDO
           </p>
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.3em] text-xs md:text-sm uppercase mt-4">
-            Verificados por Maradona
+            Verificados por la marca &ldquo;Gracias D10S&rdquo;
           </p>
         </div>
 
