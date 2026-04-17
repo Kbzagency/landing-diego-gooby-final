@@ -84,16 +84,22 @@ export default function VisionNegocioSection() {
           <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.4em] text-xs uppercase mb-4">
             Visión
           </p>
-          <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2rem,8vw,6rem)] text-white leading-tight">
-            UN LEGADO
-            <br />
-            UN SENTIMIENTO
+          <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(1.6rem,6vw,5rem)] text-white leading-tight whitespace-nowrap">
+            UN LEGADO UN SENTIMIENTO
           </h2>
-          <p className="font-[family-name:var(--font-bebas)] text-[var(--color-celeste)] text-xl md:text-2xl tracking-[0.15em] mt-8 max-w-3xl mx-auto leading-tight">
-            HINCHAS DEL FÚTBOL ARGENTINO DE TODO EL MUNDO
+          <p className="font-[family-name:var(--font-bebas)] text-[var(--color-celeste)] text-xl md:text-3xl tracking-[0.12em] mt-10 max-w-3xl mx-auto leading-tight">
+            MILLONES DE HINCHAS
+            <br />
+            EN TODO EL MUNDO SON
           </p>
-          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.3em] text-xs md:text-sm uppercase mt-4">
-            Verificados por la marca &ldquo;Gracias D10S&rdquo;
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-champagne)] text-sm md:text-base mt-6 max-w-2xl mx-auto leading-relaxed">
+            Usuarios verificados de la experiencia de autenticidad
+          </p>
+          <p className="font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-2xl md:text-4xl tracking-[0.2em] mt-4">
+            GRACIAS D10S
+          </p>
+          <p className="font-[family-name:var(--font-barlow)] text-[var(--color-gold)] tracking-[0.3em] text-xs md:text-sm uppercase mt-3">
+            Oficial de la marca Maradona
           </p>
         </div>
 
