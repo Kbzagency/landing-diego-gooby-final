@@ -134,59 +134,59 @@ export default function GoobyUniverseSection() {
             </p>
           </div>
 
-          {/* Palabras + celular AR (chico) al costado */}
-          <div className="flex flex-row items-center justify-center gap-4 md:gap-10" style={{ marginBottom: "80px" }}>
-            <div className="sentimiento-words space-y-4 md:space-y-6 text-right">
-              {[
-                { text: "La magia.", color: "#D4AF37" },
-                { text: "La conexión.", color: "#75AADB" },
-                { text: "La pasión.", color: "#FFFFFF" },
-              ].map((item, i) => (
-                <p
-                  key={i}
-                  className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(2rem,8vw,5rem)] leading-none"
-                  style={{ color: item.color }}
-                >
-                  {item.text}
+          {/* Palabras + cinematic text a la izquierda + celular AR a la derecha */}
+          <div className="flex flex-row items-start justify-center gap-4 md:gap-10" style={{ marginBottom: "80px" }}>
+            {/* Columna izquierda: título 3 palabras + texto cinematográfico */}
+            <div className="flex-1 min-w-0">
+              <div className="sentimiento-words space-y-4 md:space-y-6 mb-12">
+                {[
+                  { text: "La magia.", color: "#D4AF37" },
+                  { text: "La conexión.", color: "#75AADB" },
+                  { text: "La pasión.", color: "#FFFFFF" },
+                ].map((item, i) => (
+                  <p
+                    key={i}
+                    className="sentimiento-word font-[family-name:var(--font-bebas)] text-[clamp(1.8rem,7vw,4.5rem)] leading-none"
+                    style={{ color: item.color }}
+                  >
+                    {item.text}
+                  </p>
+                ))}
+              </div>
+
+              <div className="border-l-2 border-[var(--color-gold)] pl-4 md:pl-6 space-y-10">
+                <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-sm md:text-base italic leading-loose">
+                  Imaginá esto...
                 </p>
-              ))}
+                <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-sm md:text-base italic leading-loose">
+                  Un fan abre su celular y...
+                </p>
+                <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-sm md:text-base italic leading-loose">
+                  De repente Diego atraviesa la pantalla y aparece en su casa. Está
+                  en su living, para poder sacarse una foto. Y lo comparte.
+                </p>
+                <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-sm md:text-base italic leading-loose">
+                  Ahora imaginá esto multiplicado por millones de personas en todo
+                  el mundo, al mismo tiempo.
+                </p>
+                <p className="font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-base md:text-lg tracking-wider pt-4">
+                  Eso no es contenido. Es vínculo. Es cercanía. Es emoción real.
+                </p>
+              </div>
             </div>
 
-            {/* Celular AR con Diego (chico) */}
-            <div className="flex-shrink-0">
-              <div className="relative aspect-[9/19]" style={{ width: "clamp(180px, 36vw, 280px)" }}>
+            {/* Columna derecha: celular AR */}
+            <div className="flex-shrink-0 sticky top-24 self-start">
+              <div className="relative aspect-[9/19]" style={{ width: "clamp(140px, 30vw, 260px)" }}>
                 <Image
                   src="/assets/images/diego-ar-living.png"
                   alt="Diego Maradona apareciendo en AR en el living a través del celular"
                   fill
                   className="object-contain"
-                  sizes="140px"
+                  sizes="260px"
                 />
               </div>
             </div>
-          </div>
-
-          {/* Cinematic paragraph */}
-          <div className="max-w-2xl mx-auto text-center">
-          <div className="border-l-2 border-[var(--color-gold)] pl-8 text-left max-w-lg mx-auto space-y-20">
-            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
-              Imaginá esto...
-            </p>
-            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
-              Un fan abre su celular y...
-            </p>
-            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
-              De repente Diego atraviesa la pantalla y aparece en su casa. Está
-              en su living, para poder sacarse una foto. Y lo comparte.
-            </p>
-            <p className="font-[family-name:var(--font-playfair)] text-[var(--color-champagne)] text-base md:text-lg italic leading-loose">
-              Ahora imaginá esto multiplicado por millones de personas en todo
-              el mundo, al mismo tiempo.
-            </p>
-            <p className="font-[family-name:var(--font-bebas)] text-[var(--color-gold)] text-lg md:text-xl tracking-wider pt-4">
-              Eso no es contenido. Es vínculo. Es cercanía. Es emoción real.
-            </p>
-          </div>
           </div>
         </div>
       </section>
